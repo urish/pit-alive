@@ -1,0 +1,14 @@
+[Unit]
+Description=Simple HTTP Server
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/pit-alive
+WorkingDirectory=/tmp
+Restart=always
+RestartSec=5
+User=nobody
+Group=nogroup
